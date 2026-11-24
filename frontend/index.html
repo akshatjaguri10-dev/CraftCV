@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CraftCV – Free resume builder</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="topbar">
+    <a class="logo" href="index.html">
+      <i class="fa-solid fa-file-circle-check"></i>
+      <span class="logo-word">
+        Craft<span class="logo-accent">CV</span>
+        <span class="logo-underline"></span>
+      </span>
+    </a>
+
+    <!-- 1. ADDED MOBILE MENU BUTTON HERE -->
+    <button class="mobile-menu-btn" id="mobile-menu-btn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- 2. ADDED ID TO NAV -->
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="#features">Features</a>
+      <a href="#templates">Templates</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button class="btn-header" id="contact-btn" style="border: none; cursor: pointer;">Contact</button>
+  </header>
+
+  <main class="page">
+
+    <!-- WELCOME SECTION -->
+    <section class="welcome" data-aos="fade-up">
+      <p class="eyebrow">Welcome to CraftCV</p>
+      <h2>Build a clean <span id="changing-word" class="hl">resume</span> in minutes.</h2>
+    </section>
+
+    <!-- FEATURE SECTION -->
+    <section class="feature" id="features">
+      <div class="img-container" data-aos="fade-right">
+        <img src="resume_img1.png" alt="CraftCV Resume Mockup">
+      </div>
+
+      <div class="feature-text" data-aos="fade-left">
+        <div class="meta">
+          <span class="badge">CV</span>
+          <span>Free tool</span>
+          <span class="dot">•</span>
+          <span>No signup</span>
+        </div>
+        <h1>Build a clean resume in minutes</h1>
+        <p class="lead">Pick a template, fill in your details and watch your resume update as you type. When it looks right, download it as a PDF.</p>
+        <p class="meta-red">Classic template</p>
+      </div>
+    </section>
+
+    <!-- TEMPLATES SECTION -->
+    <section class="templates" id="templates">
+      <div class="section-head" data-aos="fade-up">
+        <p class="eyebrow">Templates</p>
+        <h2>Choose your starting point</h2>
+        <p class="section-sub">Pick a layout that fits your style. You can customize the colors and fonts in the builder.</p>
+      </div>
+
+      <div class="template-grid">
+
+        <!-- CLASSIC TEMPLATE -->
+        <a class="template-card" href="builder.html?t=classic" data-aos="zoom-in" data-aos-delay="100">
+          <div class="template-img-container">
+            <img src="resume_img2.png" alt="Classic resume template">
+          </div>
+          <div class="template-feature-body">
+            <div class="meta">
+              <span class="badge">Classic</span>
+            </div>
+            <h3>Classic</h3>
+            <p class="lead">A timeless single-column layout that prints cleanly.</p>
+            <span class="template-link">Use this template →</span>
+          </div>
+        </a>
+
+        <!-- MODERN TEMPLATE -->
+        <a class="template-card" href="builder.html?t=modern" data-aos="zoom-in" data-aos-delay="200">
+          <div class="template-img-container" style="background: #e6f0ea;">
+            <img src="template_2.png" alt="Modern resume template">
+          </div>
+          <div class="template-feature-body">
+            <div class="meta">
+              <span class="badge">Modern</span>
+            </div>
+            <h3>Modern</h3>
+            <p class="lead">Two-column layout with a bold coloured sidebar.</p>
+            <span class="template-link">Use this template →</span>
+          </div>
+        </a>
+
+        <!-- MINIMAL TEMPLATE -->
+        <a class="template-card" href="builder.html?t=minimal" data-aos="zoom-in" data-aos-delay="300">
+          <div class="template-img-container" style="background: #f9f9f9;">
+            <img src="template_3.png" alt="Minimal resume template">
+          </div>
+          <div class="template-feature-body">
+            <div class="meta">
+              <span class="badge">Minimal</span>
+            </div>
+            <h3>Minimal</h3>
+            <p class="lead">Clean, black-and-white typography for a sleek look.</p>
+            <span class="template-link">Use this template →</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about" data-aos="fade-up">
+      <div class="about-content">
+        <p class="eyebrow">About CraftCV</p>
+        <h2>Built for job seekers, by designers.</h2>
+        <p class="about-text">We believe that creating a professional resume shouldn't cost you money or require a degree in graphic design. CraftCV is a completely free, open-source tool that runs entirely in your browser. No signups, no watermarks, no hidden fees. Just clean, print-ready PDFs that help you land the interview.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="logo" href="index.html">CraftCV</a>
+        <p>Free resume builder. No signup, no watermarks.</p>
+      </div>
+
+      <nav class="footer-nav">
+        <div>
+          <h4>Product</h4>
+          <a href="index.html">Home</a>
+          <a href="#templates">Templates</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="builder.html?t=classic">Classic template</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> CraftCV. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- CONTACT POPUP MODAL -->
+  <div class="modal-overlay" id="contact-modal" hidden>
+    <div class="contact-popup">
+      <button class="popup-close" id="close-modal">&times;</button>
+      <h3>Get in touch</h3>
+      <p>Have a question or feedback? Drop your email below.</p>
+
+      <form id="contact-form">
+        <div class="field">
+          <label for="contact-email">Your Email</label>
+          <input type="email" id="contact-email" required placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="contact-msg">Message (Optional)</label>
+          <textarea id="contact-msg" rows="3" placeholder="What's on your mind?"></textarea>
+        </div>
+        <button type="submit" class="btn-main" style="width: 100%;">Send Message</button>
+        <p class="success-msg" id="contact-success" hidden>Thanks! We'll be in touch soon.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize Scroll Animations
+    AOS.init({ duration: 800, once: true });
+
+    // Set Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Rotating Text
+    const words = ["resume", "CV", "portfolio", "profile"];
+    let wordIndex = 0;
+    const changingWordElement = document.getElementById("changing-word");
+
+    setInterval(() => {
+      changingWordElement.classList.add("fade-out");
+      setTimeout(() => {
+        wordIndex = (wordIndex + 1) % words.length;
+        changingWordElement.textContent = words[wordIndex];
+        changingWordElement.classList.remove("fade-out");
+      }, 400);
+    }, 2500);
+
+    // ==========================================
+    // CONTACT POPUP LOGIC
+    // ==========================================
+    const contactBtn = document.getElementById('contact-btn');
+    const contactModal = document.getElementById('contact-modal');
+    const closeModalBtn = document.getElementById('close-modal');
+    const contactForm = document.getElementById('contact-form');
+    const contactSuccess = document.getElementById('contact-success');
+
+    if (contactBtn && contactModal) {
+      contactBtn.addEventListener('click', () => {
+        contactModal.hidden = false;
+      });
+
+      closeModalBtn.addEventListener('click', () => {
+        contactModal.hidden = true;
+      });
+
+      contactModal.addEventListener('click', (e) => {
+        if (e.target === contactModal) {
+          contactModal.hidden = true;
+        }
+      });
+
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        contactForm.querySelector('button[type="submit"]').style.display = 'none';
+        contactSuccess.hidden = false;
+        document.getElementById('contact-email').value = '';
+
+        setTimeout(() => {
+          contactModal.hidden = true;
+          contactForm.querySelector('button[type="submit"]').style.display = 'block';
+          contactSuccess.hidden = true;
+        }, 2500);
+      });
+    }
+
+    // ==========================================
+    // 3. MOBILE MENU TOGGLE LOGIC
+    // ==========================================
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mainNav = document.getElementById('main-nav');
+    if (mobileMenuBtn && mainNav) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mainNav.classList.toggle('open');
+      });
+    }
+  </script>
+
+</body>
+</html>
